@@ -164,7 +164,7 @@ a span {
   color: var(--secondary-text-cl);
   margin-left: auto;
 }
-.contacts__item--right {
+.contacts__last {
   margin-left: 32px;
 }
 
