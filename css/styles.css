@@ -650,10 +650,10 @@ background-color: var(--secondary-text-cl);
 .social-icons-list {
   display: flex;
 }
-. {
+.social-icons__item {
   margin-right: 10px;
 }
-.:last-child {
+.social-icons__item:last-child {
   margin-right: 0;
 }
 .social-icons__link-footer {
