@@ -1,92 +1,11 @@
-html {
-  box-sizing: border-box;
-}
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
-
-:root {
-  --main-text-cl: #212121;
-  --secondary-text-cl: #757575;
-  --social-icons: #afb1b8;
-  --accent-cl: #2196f3;
-  --alt-text-cl: #ffffff;
-  --secondary-ac-cl: #188ce8;
-
-  --main-bg: #ffffff;
-  --section-bg: #f5f4fa;
-  --dark-bg: #2f303a;
-  --main-font: "Roboto", sans-serif;
-  --title-font: "Raleway", sans-serif;
-  --animation: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-body {
-  font-family: var(--main-font);
-  font-size: 18px;
-  line-height: 1.67;
-  letter-spacing: 0.02em;
-  color: var(--main-text-cl);
-  background: var(--main-bg);
-}
-
-.container {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-right: auto;
-  margin-left: auto;
-}
-
+@import "./utils/variables";
+@import "./base/common";
+@import "./base/container";
 .section {
   padding-bottom: 94px;
   padding-top: 94px;
 }
 
-.list {
-  list-style: none;
-  margin: 0;
-  padding-left: 0;
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-  margin-top: 0;
-}
-
-img {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-.link {
-  color: inherit;
-  text-decoration: none;
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.link:hover,
-.link:focus {
-  color: var(--accent-cl);
-}
-/*скрытый заголовок*/
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  border: 0;
-  margin: -1px;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
 /* header */
 .page-header {
   border-bottom: 1px solid #ececec;
@@ -107,23 +26,7 @@ img {
   align-items: center;
 }
 /*logo*/
-a span {
-  color: var(--accent-cl);
-}
-.logo {
-  display: inline-block;
-  margin-right: 93px;
-
-  color: var(--main-text-cl);
-
-  font-style: normal;
-  font-weight: bold;
-  font-family: var(--title-font);
-  font-size: 26px;
-  line-height: 1.18;
-  letter-spacing: 0.03em;
-}
-
+@import "./components/logo";
 .menu__link {
   display: block;
   padding-top: 32px;
